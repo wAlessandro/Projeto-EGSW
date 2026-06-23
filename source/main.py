@@ -5,7 +5,7 @@ from models.database import db
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = (
-    "mysql+pymysql://root:%40bost4fedid4%24@localhost/ong_animais"
+    "mysql+pymysql://root:SENHADACONEXAO@localhost/ong_animais" #usuario:senha da conexao
 )
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 

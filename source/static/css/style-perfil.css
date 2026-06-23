@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    background: #B5EDA9;
+
+    width: 100%;
+    min-height: 70px;
+
+    display: flex;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 140px;
+    height: auto;
+    display: block;
+   cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1B70B2;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.menu a:hover {
+    color: #2b2b2b;
+    font-size: 22px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+}
+
+
+.btn-login {
+    text-decoration: none;
+    color: #1B70B2;
+    font-weight: bold;
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    color: #2b2b2b;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    margin: 8px;
+    border-radius: 100%;
+
+    object-fit: cover;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.hero {
+     display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+
+}
+
+.hero-texto {
+
+    flex: 1 1 450px;
+    padding: 20px;
+    margin: 10px 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+
+
+
+}
+
+.hero-texto h1 {
+    color: #1B70B2;
+    font-size: clamp(2rem, 5vw, 4.5rem);
+
+}
+
+.hero-texto p{
+    font-size: 20px;
+    
+}
+
+.btn,
+.btn2 {
+    display: inline-block;
+   
+    padding: 20px 45px;
+    margin: 5px 5px;
+    color: white;
+    background: #DE1111;
+    background: linear-gradient(90deg, rgba(222, 17, 17, 1) 0%, rgba(255, 137, 2, 1) 100%);
+    font-size: 20px;
+    border-radius: 15px;
+
+    text-decoration: none;
+}
+
+.btn2 {
+    background: #33DE11;
+    background: linear-gradient(90deg, rgba(51, 222, 17, 1) 0%, rgba(0, 131, 177, 1) 100%);
+}
+
+.hero-botao-criar-conta {
+    background: #2676AF;
+    padding: 5px;
+    width: 100%;
+    max-width: 550px;
+    height: 85px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.hero-botao-criar-conta:hover{
+    background: #043ff0;
+}
+
+.btn-cadastrar {
+    font-size: 35px;
+
+}
+
+.hero-botao-criar-conta a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    outline: none;
+
+}
+
+.hero-botao-criar-conta p {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.hero-imagem {
+    flex: 1 1 430px;
+
+}
+
+.hero-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.metrica{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+
+}
+
+
+.card-metrica{
+    flex:1 1 250px;
+    max-width:280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    
+    border: 1px solid #e0d7d7;
+    box-shadow: 0px 1px 30px 0 rgba(4, 4, 32, 0.388);
+    border-radius:20px;
+    margin: 50px auto;
+    padding: 30px;
+    cursor: pointer;
+    
+}
+.card-metrica:hover{
+    transform: scale(1.02);
+
+}
+span{
+    color:#1e1818;
+    font-weight:bold;
+    font-size: 30px;
+    
+}
+
+.icone{
+    font-size: 30px;
+    padding: 5px;
+    margin: 5px auto;
+    
+}
+
+.metrica p{
+    font-size: 25px;
+    font-weight: 600;
+    color: #2676AF;
+}
+
+
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-imagem {
+        width: 100%;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .btn,
+    .btn2 {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .hero-botao-criar-conta {
+        width: 100%;
+    }
+}

@@ -1,0 +1,326 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+     background: #2b2b2b;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* CONTAINER */
+
+.container {
+
+    width: 95%;
+    max-width: 1200px;
+
+    margin: 10px auto;
+
+    display: flex;
+
+    gap: 1px;
+    
+
+    overflow: hidden;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+
+    width: 320px;
+    height: 95vh;
+    background: #fefefe;
+    padding: 30px;
+    margin: 5px auto;
+    border-radius: 20px 0px 0px 20px;
+}
+
+
+
+/* FOTO PERFIL */
+
+.foto-perfil{
+    position: relative;
+
+    width: 140px;
+    height: 140px;
+
+    margin: 0 auto 20px auto;
+}
+
+.foto-perfil img{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 3px solid #2E7D32;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.15);
+}
+
+#foto-usuario{
+    display: none;
+}
+
+/* BOTÃO CÂMERA */
+
+.btn-camera{
+    position: absolute;
+
+    bottom: 5px;
+    right: 5px;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: #2E7D32;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.btn-camera:hover{
+    transform: scale(1.1);
+}
+
+
+
+.sidebar-header {
+
+    text-align: center;
+}
+
+.sidebar-header h1 {
+
+    font-size: 28px;
+
+    color: #2e7d32;
+
+    margin-bottom: 10px;
+}
+
+.sidebar-header p {
+
+    color: #666;
+
+    line-height: 1.5;
+}
+
+/* BENEFÍCIOS */
+
+.beneficios {
+
+    margin-top: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+/* CARD BENEFÍCIO */
+
+.beneficio {
+
+    background: rgba(248, 244, 244, 0.96);
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    transition: 0.2s;
+}
+
+.beneficio:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ÍCONE */
+
+.beneficio i {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #2e7d32;
+
+    font-size: 22px;
+}
+
+/* TEXTO */
+
+.texto-beneficio h3 {
+
+    font-size: 16px;
+
+    color: #333;
+
+    margin-bottom: 4px;
+}
+
+.texto-beneficio p {
+
+    font-size: 13px;
+
+    color: #666;
+}
+
+.version {
+    text-align: center;
+    
+    font-size: 15px;
+
+}
+
+/* FORMULÁRIO */
+
+.formulario {
+    height: 95vh;
+    flex: 1;
+    background: #ebebeb;
+
+    border-radius: 0px 20px 20px 0px;
+    padding: 10px;
+    margin: 5px auto;
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin: 20px;
+}
+
+form legend {
+    font-weight: bolder;
+}
+
+.linha-formulario {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 5px;
+
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: #fefefe;
+    padding: 2px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 30px;
+    padding: 0px 5px;
+    border:1px solid #DADADA;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+
+}
+
+.form-group-email input {
+    width: 110%;
+    height: 30px;
+    padding: 0px 5px;
+    border:1px solid #DADADA;
+    
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+
+}
+
+.form-group, .form-group-email  label {
+    margin-bottom: 2px;
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 2px;
+}
+
+.seguranca {
+    width: 100%;
+    display: flex;
+    margin-bottom: 2px;
+    padding: 10px;
+}
+
+.senha-info {
+    font-size: 12px;
+    margin: 5px;
+}
+
+.termos {
+    padding: 5px;
+    margin: 8px 0px;
+}
+
+form button {
+
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+
+    background: #2E7D32;
+
+    color: white;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+    margin-top: 20px;
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

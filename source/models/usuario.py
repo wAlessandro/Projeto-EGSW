@@ -6,10 +6,10 @@ class Usuario(db.Model):
     id_usuario = db.Column(db.Integer, primary_key=True)
     nome = db.Column(db.String(100), nullable=False)
     cpf = db.Column(db.String(11), nullable=False, unique=True)
-    email = db.Column(db.String(150), nullable=False, unique=True)
+    email = db.Column(db.String(150), nullable=False, unique=False)
     senha = db.Column(db.String(255), nullable=False)
     telefone = db.Column(db.String(20))
-    data_nascimento = db.Column(db.DateTime)
+    data_nascimento = db.Column(db.Date)
     data_cadastro = db.Column(
         db.DateTime,
         server_default=db.func.current_timestamp()

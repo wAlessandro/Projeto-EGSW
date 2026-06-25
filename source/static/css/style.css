@@ -9,7 +9,7 @@
 /* BODY */
 
 body {
-     background: #2b2b2b;
+    background-color: #2b2b2b;
     font-family: Arial, sans-serif;
     overflow: hidden;
 }
@@ -238,8 +238,8 @@ form legend {
 
 .linha-formulario {
     display: flex;
-    margin-bottom: 20px;
-    padding: 5px;
+    /* margin-bottom: 20px; */
+    /* padding: 5px; */
 
 }
 
@@ -276,7 +276,7 @@ form legend {
 }
 
 .form-group, .form-group-email  label {
-    margin-bottom: 2px;
+    /* margin-bottom: 2px; */
     color: #333;
     font-weight: bold;
     font-size: 15px;

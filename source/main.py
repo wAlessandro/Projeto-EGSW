@@ -1,17 +1,15 @@
 from flask import Flask
-# import mysql.connector
 from models.database import db
-
+from create_db import *
 
 app = Flask(__name__)
+app.secret_key = "chave_secreta"
 app.config["SQLALCHEMY_DATABASE_URI"] = (
-    "mysql+pymysql://root:SENHADACONEXAO@localhost/ong_animais" #usuario:senha da conexao
+    "mysql+pymysql://root:%40bost4fedid4%24@localhost/ong_animais"
 )
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db.init_app(app)
-
-# Importa os models para registrá-los
 
 from models.usuario import Usuario
 from models.endereco import Endereco

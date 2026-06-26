@@ -5,7 +5,7 @@ from create_db import *
 app = Flask(__name__)
 app.secret_key = "chave_secreta"
 app.config["SQLALCHEMY_DATABASE_URI"] = (
-    "mysql+pymysql://root:%40bost4fedid4%24@localhost/ong_animais"
+    "mysql+pymysql://root:root@localhost/ong_animais"
 )
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
